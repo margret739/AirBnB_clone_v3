@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Flask app"""
 
-from api.v1.views import app_views
+import app_views from api.v1.views
 
 @app_views.route('/status')
 def api_status():
