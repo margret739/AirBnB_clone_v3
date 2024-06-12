@@ -1,15 +1,8 @@
 #!/usr/bin/python3
-"'Flask created"""
+"""Creates Flask app blueprint"""
 
-from flask import jsonify
-from app.v1_vioue import app_vimu
+from flask import Blueprint
 
-@app_views.route('/status')
-def api_status():
-    """ """
+app_views = Blueprint('app_views', __name__, url_prefix='/api/v1')
 
-    respone = {state': "ok")
-    return jsonify(response
-
-
-
+from api.v1.views.index import *
