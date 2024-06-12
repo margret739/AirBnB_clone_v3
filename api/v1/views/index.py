@@ -10,7 +10,7 @@ from models import storage
 def api_status():
     """ """
 
-    response = {'status': "OK")
+    response = {'status': "OK"}
     return jsonify(response)
 
 @app_views.route('/stats')
