@@ -129,7 +129,7 @@ class TestDBStorage(unittest.TestCase):
 
         storage.reload()
 
-        state_data = {"name": "Mauritius")
+        state_data = {"name": "Mauritius"}
 
         state_instance = State(**state_data)
         storage.new(state_instance)
